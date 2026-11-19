@@ -1,0 +1,232 @@
+/* ESTILOS GENERALES */
+:root {
+    --azul-racing: #003399;
+    --celeste-racing: #75c9ed;
+    --fondo: #eafaff;
+    --texto: #17212b;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px;
+}
+
+body {
+    margin: 0;
+    background-color: var(--fondo);
+    color: var(--texto);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+.navbar-racing {
+    background-color: var(--azul-racing);
+}
+
+.navbar-racing .nav-link {
+    color: white;
+}
+
+.navbar-racing .nav-link:hover,
+.navbar-racing .nav-link:focus {
+    color: #bfeeff;
+}
+
+.portada {
+    padding: 75px 15px;
+    color: white;
+    background: linear-gradient(120deg, #003399, #168ac2);
+}
+
+.portada h1 {
+    font-size: clamp(2rem, 5vw, 3.4rem);
+    font-weight: 800;
+}
+
+.sobre-titulo {
+    margin-bottom: 5px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.seccion {
+    margin: 35px 0;
+    padding: 28px;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 3px 14px rgba(0, 40, 100, 0.08);
+}
+
+.seccion h2 {
+    margin-bottom: 20px;
+    color: var(--azul-racing);
+    font-weight: 700;
+}
+
+.texto-intro {
+    max-width: 850px;
+    margin: auto;
+    font-size: 1.1rem;
+}
+
+.texto-secundario {
+    color: #526170;
+}
+
+.carrusel-racing {
+    max-width: 780px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    padding: 8px;
+    background: rgba(0, 0, 0, 0.62);
+    border-radius: 8px;
+}
+
+.imagen-redondeada {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+.tarjeta-racing {
+    border: 1px solid #c5e9fa;
+    border-top: 5px solid var(--azul-racing);
+}
+
+.dato-titulo {
+    height: 100%;
+    padding: 22px;
+    text-align: center;
+    background-color: #e7f7ff;
+    border-radius: 12px;
+}
+
+.numero {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--azul-racing);
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.galeria-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.btn-racing {
+    color: white;
+    background-color: var(--azul-racing);
+}
+
+.btn-racing:hover {
+    color: white;
+    background-color: #00236d;
+}
+
+.seguridad {
+    border-left: 6px solid var(--azul-racing);
+}
+
+.seguridad .card {
+    border-color: #c5e9fa;
+}
+
+.consejos li {
+    margin-bottom: 8px;
+}
+
+.footer-racing {
+    margin-top: 45px;
+    padding: 25px 10px;
+    color: white;
+    background-color: var(--azul-racing);
+}
+
+/* AJUSTES PARA CELULARES */
+@media (max-width: 576px) {
+    .portada {
+        padding: 55px 12px;
+    }
+
+    .seccion {
+        margin: 22px 0;
+        padding: 20px 16px;
+    }
+
+    .carousel-item img {
+        height: 250px;
+    }
+
+    .carousel-caption h3 {
+        font-size: 1rem;
+    }
+
+    .galeria-img {
+        height: auto;
+        max-height: 260px;
+    }
+}
+
+
+/* SEGURIDAD INFORMÁTICA: CONTENIDO Y TARJETAS */
+.seguridad {
+    border-left: 6px solid var(--azul-racing);
+}
+
+.seguridad .subseccion-seguridad h3,
+.seguridad .subseccion-seguridad h4 {
+    color: var(--azul-racing);
+}
+
+.seguridad .card {
+    height: 100%;
+    border: 1px solid #c5e9fa;
+    border-radius: 8px;
+}
+
+.seguridad .card h4 {
+    margin-bottom: 10px;
+}
+
+.seguridad .card p {
+    margin-bottom: 0;
+}
+
+.medidas-seguridad,
+.riesgo-datos {
+    padding: 15px 18px;
+    background-color: #eaf7ff;
+    border-left: 4px solid var(--azul-racing);
+    border-radius: 8px;
+}
+
+.riesgo-datos h4 {
+    margin-bottom: 8px;
+}
+
+.riesgo-datos p {
+    margin-bottom: 0;
+}
+
+.seguridad .consejos li {
+    margin-bottom: 6px;
+}
+
+@media (max-width: 576px) {
+    .seguridad {
+        padding: 20px 16px;
+    }
+}
